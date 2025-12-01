@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "quarterly"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
