@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  # Make pip resilient to slow or flaky PyPI connections
+  PIP_DEFAULT_TIMEOUT: '60'
+  PIP_RETRIES: '10'
+
 jobs:
   lint:
     runs-on: ubuntu-latest
